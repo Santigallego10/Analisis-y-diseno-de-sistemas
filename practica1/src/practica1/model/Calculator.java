@@ -1,4 +1,4 @@
-package model;
+package practica1.model;
 
 public class Calculator {
 
