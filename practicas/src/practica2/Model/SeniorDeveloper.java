@@ -7,8 +7,8 @@ public class SeniorDeveloper extends Employee {
     public SeniorDeveloper() {
     }
 
-    public SeniorDeveloper(Double salary, Bonus bonus, int workHours) {
-        super(salary, bonus);
+    public SeniorDeveloper(Double salary, int workHours) {
+        super(salary, new MaxBonus());
         this.workHours = workHours;
     }
 

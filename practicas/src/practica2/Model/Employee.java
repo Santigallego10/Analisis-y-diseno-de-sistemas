@@ -1,5 +1,7 @@
 package practica2.Model;
 
+import practica2.Model.Interfaces.Bonus;
+
 public class Employee{
 
     private Double salary;

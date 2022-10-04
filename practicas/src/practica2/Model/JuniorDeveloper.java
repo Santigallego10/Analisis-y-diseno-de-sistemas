@@ -7,8 +7,8 @@ public class JuniorDeveloper extends Employee {
     public JuniorDeveloper() {
     }
 
-    public JuniorDeveloper(Double salary, Bonus bonus, String address) {
-        super(salary, bonus);
+    public JuniorDeveloper(Double salary, String address) {
+        super(salary, new MinBonus());
         this.address = address;
     }
 

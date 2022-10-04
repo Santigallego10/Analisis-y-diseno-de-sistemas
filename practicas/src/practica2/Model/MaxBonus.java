@@ -1,6 +1,8 @@
 package practica2.Model;
 
-public class MaxBonus extends Bonus {
+import practica2.Model.Interfaces.Bonus;
+
+public class MaxBonus implements Bonus {
 
     public Double getBonus(Double salary) {
         return salary*0.20;
