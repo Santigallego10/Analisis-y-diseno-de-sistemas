@@ -1,4 +1,4 @@
-from Services.UserType import UserType
+from Services.userServices.UserType import UserType
 
 
 class OccasionalBuyer(UserType):

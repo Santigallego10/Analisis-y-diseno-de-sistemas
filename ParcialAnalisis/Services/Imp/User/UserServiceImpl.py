@@ -1,4 +1,4 @@
-from Services.UserService import UserService
+from Services.userServices.UserService import UserService
 from model.User import User
 
 
