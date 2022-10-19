@@ -18,7 +18,7 @@ public class Main {
                     break;
                 case 1:
                     showUsersManagementMenu(userController);
-                default:
+                    default:
                     break;
             }
         }

@@ -6,9 +6,7 @@ import practica3.services.impl.WholesaleBuyer;
 import practica3.services.UserService;
 import practica3.services.WelcomeUser;
 import practica3.services.impl.UserServiceImp;
-
 import javax.swing.*;
-import javax.xml.namespace.QName;
 
 public class UserController {
 
