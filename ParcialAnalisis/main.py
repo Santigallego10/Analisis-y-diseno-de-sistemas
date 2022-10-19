@@ -1,4 +1,5 @@
 from Controllers.UserController import UserController
+from model.Shop import Shop
 
 
 def showUserManagementMenu(userController):
@@ -14,7 +15,8 @@ def showUserManagementMenu(userController):
     else:
         print("You need to select a valid option")
 
-userController = UserController()
+
+shop = Shop("TeLoConsigo")
 
 print("===========================\nWELCOME TO 'TeLoConsigoStore'\n===========================\n")
 
@@ -22,4 +24,4 @@ while True:
 
     opcion = input("What you want to do: \n1.Manage Users\n2.Manage Products")
     if opcion == "1":
-        showUserManagementMenu(userController)
+        showUserManagementMenu(shop.userController)
