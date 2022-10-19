@@ -2,6 +2,14 @@ from Services.productServices.ProductCategory import ProductCategory
 
 class Product:
 
+    '''
+    This class owns a list of optional properties that can be
+      set as instance of the class: ProductOptionalProperty
+
+    This class owns a category that must be and instance of
+      the class: ProductCategory
+    '''
+
     productOptionalProperties = []
     category: ProductCategory
 

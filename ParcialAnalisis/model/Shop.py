@@ -4,6 +4,10 @@ from Controllers.ProductController import ProductController
 
 class Shop:
 
+    '''
+    This class owns an instance of the class: UserController and ProductController
+    '''
+
     userController: UserController
     productController: ProductController
 
