@@ -12,7 +12,6 @@ class UserServiceImpl(UserService):
 
     def updateUser(self, name, id, address, phoneNumber, email, userType, user):
 
-
     def deleteUser(self, user):
         pass
 
@@ -21,3 +20,4 @@ class UserServiceImpl(UserService):
             if i.id == id:
                 return i
         print("There are no users related to the specified id")
+
