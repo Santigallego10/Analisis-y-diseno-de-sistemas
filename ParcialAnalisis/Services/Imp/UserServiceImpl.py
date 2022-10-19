@@ -10,8 +10,8 @@ class UserServiceImpl(UserService):
     def addUser(self, name, id, address, phoneNumber, email, userType):
         self.users.append(User(name, id, address, phoneNumber, email, userType))
 
-    def updateUser(self, name, id, address, phoneNumber, email):
-        pass
+    def updateUser(self, name, id, address, phoneNumber, email, userType, user):
+
 
     def deleteUser(self, user):
         pass

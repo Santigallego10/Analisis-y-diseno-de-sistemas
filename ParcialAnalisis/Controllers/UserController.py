@@ -31,6 +31,13 @@ class UserController:
 
     def updateUser(self):
         user = self.findUserById()
+        name = input("write the new name. Actual: "+user.name)
+        id = input("Write the new id of the user. Actual: "+user.id)
+        address = input("Write the new address of the user. Actual: "+user.address)
+        phoneNumber = input("Write the new phone number of the user. Actual: "+user.phoneNumber)
+        email = input("Write the new email of the user. Actual: "+user.email)
+        userType = askUserType()
+        self.userService.updateUser(name, id, address, phoneNumber, email, userType, user)
 
     def deleteUser(self):
         pass
