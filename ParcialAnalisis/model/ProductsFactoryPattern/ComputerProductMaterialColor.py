@@ -1,0 +1,3 @@
+class ComputerProductMaterialColor:
+    pass
+
