@@ -1,0 +1,2 @@
+class AccessoryProduct:
+    pass
