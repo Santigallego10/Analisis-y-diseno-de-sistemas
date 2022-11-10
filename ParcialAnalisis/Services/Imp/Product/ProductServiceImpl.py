@@ -6,28 +6,13 @@ This class owns the list of products
 '''
 
 
-def getProductType():
-    isMaterial = input("Do you want to specify the material of the product? Answer 'yes' or 'no' ")
-    isColor = input("Do you want to specify the color of the product? Answer 'yes' or 'no' ")
-    if isMaterial == "yes" and isColor == "yes":
-        return "ProductMaterialColor"
-    elif isMaterial == "yes" and isColor == "no":
-        return "ProductMaterial"
-    elif isMaterial == "no" and isColor == "yes":
-        return "ProductColor"
-    elif isMaterial == "no" and isColor == "no":
-        return "Product"
-    else:
-        print("Please insert yes or no to each question")
-
-
 class ProductServiceImpl(ProductService):
 
     def __init__(self):
         self.products = []
 
     def addProduct(self, name, sku, description, price, stock, images, creationDate, updatingDate, category):
-        type = getProductType()
+        type = self.getProductType()
         product = category.createProduct(type)
         product.name = name
         product.sku = sku
@@ -37,7 +22,8 @@ class ProductServiceImpl(ProductService):
         product.images = images
         product.creationDate = creationDate
         product.updatingDate = updatingDate
-        print(product)
+        self.products.append(product)
+        print("PRODUCT CREATED: "+product)
 
     def updateProduct(self):
         pass
@@ -47,3 +33,21 @@ class ProductServiceImpl(ProductService):
 
     def getProducto(self):
         pass
+
+    '''
+    This method ask if the current product has any optional property in order to
+    return a string that PRODUCT STORES use to define the type of product.
+    '''
+    def getProductType(self):
+        isMaterial = input("Do you want to specify the material of the product? Answer 'yes' or 'no' ")
+        isColor = input("Do you want to specify the color of the product? Answer 'yes' or 'no' ")
+        if isMaterial == "yes" and isColor == "yes":
+            return "ProductMaterialColor"
+        elif isMaterial == "yes" and isColor == "no":
+            return "ProductMaterial"
+        elif isMaterial == "no" and isColor == "yes":
+            return "ProductColor"
+        elif isMaterial == "no" and isColor == "no":
+            return "Product"
+        else:
+            print("Please insert yes or no to each question")

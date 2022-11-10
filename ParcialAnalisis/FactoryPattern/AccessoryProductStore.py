@@ -4,6 +4,12 @@ from model.ProductsFactoryPattern.AccessoryProductMaterialColor import Accessory
 from model.ProductsFactoryPattern.AccessoryProductMaterial import AccessoryProductMaterial
 from model.ProductsFactoryPattern.AccessoryProductColor import AccessoryProductColor
 
+'''
+    THIS CLASS MANAGE THE CREATION OF ANY OF THE PRODUCT VARIATIONS
+    PRESENT IN THIS CATEGORY
+    
+'''
+
 
 class AccessoryProductStore(ProductStore):
 

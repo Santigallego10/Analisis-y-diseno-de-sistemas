@@ -4,6 +4,12 @@ from model.ProductsFactoryPattern import CellphoneProductMaterialColor
 from model.ProductsFactoryPattern import CellphoneProductMaterial
 from model.ProductsFactoryPattern import CellphoneProductColor
 
+'''
+    THIS CLASS MANAGE THE CREATION OF ANY OF THE PRODUCT VARIATIONS
+    PRESENT IN THIS CATEGORY
+
+'''
+
 
 class CellphoneProductStore(ProductStore):
 

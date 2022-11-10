@@ -4,6 +4,12 @@ from model.ProductsFactoryPattern import ElectronicProductMaterialColor
 from model.ProductsFactoryPattern import ElectronicProductMaterial
 from model.ProductsFactoryPattern import ElectronicProductColor
 
+'''
+    THIS CLASS MANAGE THE CREATION OF ANY OF THE PRODUCT VARIATIONS
+    PRESENT IN THIS CATEGORY
+
+'''
+
 
 class ElectronicProductStore(ProductStore):
 

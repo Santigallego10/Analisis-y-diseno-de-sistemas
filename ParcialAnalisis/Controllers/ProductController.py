@@ -50,6 +50,10 @@ class ProductController(CrudOperation):
     def loadProducts(self):
         self.productLoader.loadProducts()
 
+    '''
+        This method return an specific ProductStore according to the category
+        selected for the product
+    '''
     def askCategory(self):
         while True:
             option = int(input("To what category does your product belongs?"

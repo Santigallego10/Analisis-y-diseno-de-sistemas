@@ -6,6 +6,8 @@ class Product:
 
     This class owns a category that must be and instance of
       the class: ProductCategory
+
+      All the possible variation of a product extend from this specific class
     '''
 
     def __init__(self, name, sku, description,

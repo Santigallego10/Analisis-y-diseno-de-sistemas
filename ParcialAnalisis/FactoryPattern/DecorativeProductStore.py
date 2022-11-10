@@ -4,6 +4,12 @@ from model.ProductsFactoryPattern import DecorativeProductMaterialColor
 from model.ProductsFactoryPattern import DecorativeProductMaterial
 from model.ProductsFactoryPattern import DecorativeProductColor
 
+'''
+    THIS CLASS MANAGE THE CREATION OF ANY OF THE PRODUCT VARIATIONS
+    PRESENT IN THIS CATEGORY
+
+'''
+
 
 class DecorativeProductStore(ProductStore):
 

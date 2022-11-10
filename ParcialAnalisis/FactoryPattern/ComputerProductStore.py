@@ -4,6 +4,12 @@ from model.ProductsFactoryPattern import ComputerProductMaterialColor
 from model.ProductsFactoryPattern import ComputerProductMaterial
 from model.ProductsFactoryPattern import ComputerProductColor
 
+'''
+    THIS CLASS MANAGE THE CREATION OF ANY OF THE PRODUCT VARIATIONS
+    PRESENT IN THIS CATEGORY
+
+'''
+
 
 class ComputerProductStore(ProductStore):
 
