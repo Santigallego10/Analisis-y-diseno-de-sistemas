@@ -1,8 +1,10 @@
 from Controllers.UserController import UserController
 from model.Shop import Shop
 
+
 def showProductManagementMenu(productController):
-    opcion = input("What do you want to do:\n1.Create product\n2.Update product\n3.Delete product\n4.View product details")
+    opcion = input(
+        "What do you want to do:\n1.Create product\n2.Update product\n3.Delete product\n4.View product details")
     if opcion == "1":
         productController.create()
     elif opcion == "2":
@@ -32,10 +34,6 @@ def showUserManagementMenu(userController):
 shop = Shop("TeLoConsigo")
 
 print("===========================\nWELCOME TO 'TeLoConsigoStore'\n===========================\n")
-
-
-
-
 
 while True:
 

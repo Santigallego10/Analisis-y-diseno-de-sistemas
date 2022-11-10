@@ -3,6 +3,8 @@ from Services.userServices.UserType import UserType
 '''
 This class represents an user type
 '''
+
+
 class OccasionalBuyer(UserType):
 
     def __init__(self):

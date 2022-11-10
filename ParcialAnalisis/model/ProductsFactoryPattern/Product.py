@@ -9,12 +9,16 @@ class Product:
     '''
 
     def __init__(self, name, sku, description,
-                 price,stock, images, creationDate, updatingDate):
+                 price, stock, images, creationDate, updatingDate):
         self.name = name
         self.sku = sku
         self.description = description
         self.price = price
         self.stock = stock
-        self.images = []
+        self.images = images
         self.creationDate = creationDate
         self.updatingDate = updatingDate
+
+
+
+
